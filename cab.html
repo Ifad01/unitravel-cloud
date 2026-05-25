@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cab & Airport Transfers | UniTravel Cloud</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#f5f6f8;color:#222;}
+
+header{background:white;display:flex;justify-content:space-between;align-items:center;padding:18px 70px;box-shadow:0 2px 12px rgba(0,0,0,0.06);position:sticky;top:0;z-index:1000;}
+.logo{font-size:30px;font-weight:700;color:#ff5b1f;}
+nav a{text-decoration:none;color:#333;margin-left:35px;font-size:16px;font-weight:600;}
+nav a:hover{color:#ff5b1f;}
+
+.hero{
+    height:520px;
+    background:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
+    url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1800&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:0 90px;
+}
+.hero h1{font-size:56px;margin-bottom:18px;}
+.hero p{font-size:20px;max-width:720px;line-height:1.7;}
+
+.search-wrapper{margin-top:-55px;padding:0 90px;position:relative;z-index:10;}
+.search-box{background:white;border-radius:22px;padding:22px;display:flex;gap:16px;box-shadow:0 10px 35px rgba(0,0,0,0.12);}
+.search-box input,.search-box select{flex:1;padding:18px;border:none;background:#f3f4f7;border-radius:14px;font-size:16px;outline:none;}
+.search-box button{background:#ff5b1f;color:white;border:none;padding:18px 30px;border-radius:14px;font-size:16px;font-weight:600;cursor:pointer;}
+
+.section{padding:70px 90px;}
+.section-title{font-size:34px;font-weight:700;margin-bottom:30px;color:#0b3a75;}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:24px;}
+.card{background:white;border-radius:22px;overflow:hidden;box-shadow:0 5px 18px rgba(0,0,0,0.08);transition:0.3s;}
+.card:hover{transform:translateY(-6px);}
+.card img{width:100%;height:240px;object-fit:cover;}
+.card-content{padding:22px;}
+.card h3{font-size:22px;margin-bottom:10px;color:#0b3a75;}
+.card p{font-size:15px;line-height:1.6;color:#666;margin-bottom:18px;}
+.price{font-size:18px;font-weight:700;margin-bottom:18px;}
+.card a{display:inline-block;background:#ff5b1f;color:white;text-decoration:none;padding:13px 22px;border-radius:12px;font-size:15px;font-weight:600;}
+
+.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:35px;}
+.info-box{background:white;border-radius:22px;padding:28px;box-shadow:0 5px 18px rgba(0,0,0,0.08);}
+.info-box h3{color:#0b3a75;margin-bottom:12px;}
+.info-box p{color:#666;line-height:1.6;font-size:15px;}
+
+footer{background:#0b3a75;color:white;text-align:center;padding:30px;margin-top:70px;font-size:16px;}
+
+@media(max-width:1000px){
+header{padding:18px 25px;}
+.hero{padding:0 25px;}
+.search-wrapper{padding:0 25px;}
+.section{padding:60px 25px;}
+.search-box{flex-direction:column;}
+.info-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">UniTravel Cloud</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="bus.html">Bus</a>
+<a href="train.html">Train</a>
+<a href="plane.html">Plane</a>
+<a href="cab.html">Cab</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Cab, Taxi & Airport Transfers</h1>
+<p>Book local rides, airport transfers and premium transport options across Perth and Western Australia.</p>
+</section>
+
+<div class="search-wrapper">
+<div class="search-box">
+<input type="text" placeholder="Pickup location: Perth Airport, Murdoch, Canning Vale">
+<input type="text" placeholder="Drop-off destination">
+<select>
+<option>Standard Cab</option>
+<option>Premium Ride</option>
+<option>Airport Transfer</option>
+<option>Group Van</option>
+</select>
+<button>Search Rides</button>
+</div>
+</div>
+
+<section class="section">
+<div class="section-title">Popular Cab Routes</div>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Perth Airport to CBD</h3>
+<p>Fast airport transfer option for students, tourists and business travellers.</p>
+<div class="price">From AUD $35</div>
+<a href="https://www.uber.com/au/en/" target="_blank">Book Ride</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Canning Vale to Murdoch</h3>
+<p>Convenient local ride option for university travel and daily movement.</p>
+<div class="price">From AUD $25</div>
+<a href="https://www.didiglobal.com/au/" target="_blank">Book Ride</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1507136566006-cfc505b114fc?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Perth CBD to Fremantle</h3>
+<p>Comfortable ride option for weekend trips, beaches and food spots.</p>
+<div class="price">From AUD $45</div>
+<a href="https://www.uber.com/au/en/" target="_blank">Book Ride</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>City to Cottesloe Beach</h3>
+<p>Premium ride access to one of Perth’s most popular coastal locations.</p>
+<div class="price">From AUD $38</div>
+<a href="https://www.13cabs.com.au/" target="_blank">Book Taxi</a>
+</div>
+</div>
+
+</div>
+
+<div class="info-grid">
+
+<div class="info-box">
+<h3>Airport Pickup</h3>
+<p>Compare cab and rideshare options from Perth Airport terminals to suburbs, universities and hotels.</p>
+</div>
+
+<div class="info-box">
+<h3>Tourist Transfers</h3>
+<p>Plan comfortable rides to beaches, city attractions, shopping centres and nightlife locations.</p>
+</div>
+
+<div class="info-box">
+<h3>Student Travel</h3>
+<p>Find quick local ride options for university, work, shopping and emergency travel needs.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+UniTravel Cloud © 2026 | Smart Travel Platform
+</footer>
+
+</body>
+</html>

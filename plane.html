@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flights & Experiences | UniTravel Cloud</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f6f8;
+    color:#222;
+}
+
+/* HEADER */
+
+header{
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 70px;
+    box-shadow:0 2px 12px rgba(0,0,0,0.06);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+    color:#ff5b1f;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    margin-left:35px;
+    font-size:16px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ff5b1f;
+}
+
+/* HERO */
+
+.hero{
+    height:520px;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),
+    url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1800&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    padding:0 90px;
+
+    color:white;
+}
+
+.hero h1{
+    font-size:58px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.hero p{
+    font-size:20px;
+    max-width:700px;
+    line-height:1.7;
+}
+
+/* SEARCH BAR */
+
+.search-wrapper{
+    margin-top:-55px;
+    padding:0 90px;
+    position:relative;
+    z-index:10;
+}
+
+.search-box{
+    background:white;
+    border-radius:22px;
+    padding:22px;
+    display:flex;
+    gap:16px;
+    box-shadow:0 10px 35px rgba(0,0,0,0.12);
+}
+
+.search-box input,
+.search-box select{
+    flex:1;
+    padding:18px;
+    border:none;
+    background:#f3f4f7;
+    border-radius:14px;
+    font-size:16px;
+    outline:none;
+}
+
+.search-box button{
+    background:#ff5b1f;
+    color:white;
+    border:none;
+    padding:18px 30px;
+    border-radius:14px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+/* SECTION */
+
+.section{
+    padding:70px 90px;
+}
+
+.section-title{
+    font-size:34px;
+    font-weight:700;
+    margin-bottom:30px;
+    color:#0b3a75;
+}
+
+/* CATEGORY */
+
+.categories{
+    display:flex;
+    gap:16px;
+    overflow:auto;
+    padding-bottom:10px;
+}
+
+.category{
+    background:white;
+    padding:14px 22px;
+    border-radius:14px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.06);
+    font-weight:600;
+    white-space:nowrap;
+    transition:0.3s;
+}
+
+.category:hover{
+    background:#ff5b1f;
+    color:white;
+}
+
+/* DESTINATION CARDS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+    gap:24px;
+}
+
+.card{
+    background:white;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 5px 18px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:22px;
+}
+
+.card h3{
+    font-size:22px;
+    margin-bottom:10px;
+    color:#0b3a75;
+}
+
+.card p{
+    font-size:15px;
+    line-height:1.6;
+    color:#666;
+    margin-bottom:18px;
+}
+
+.price{
+    font-size:18px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.card button{
+    background:#ff5b1f;
+    color:white;
+    border:none;
+    padding:13px 22px;
+    border-radius:12px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+/* PREMIUM STRIP */
+
+.premium{
+    margin-top:60px;
+    background:white;
+    border-radius:26px;
+    padding:35px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    box-shadow:0 5px 18px rgba(0,0,0,0.08);
+}
+
+.premium-box{
+    background:#f7f8fb;
+    border-radius:18px;
+    padding:25px;
+}
+
+.premium-box h4{
+    color:#0b3a75;
+    margin-bottom:12px;
+    font-size:18px;
+}
+
+.premium-box p{
+    color:#666;
+    font-size:14px;
+    line-height:1.6;
+}
+
+/* FOOTER */
+
+footer{
+    background:#0b3a75;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:70px;
+    font-size:16px;
+}
+
+@media(max-width:1000px){
+
+header{
+    padding:18px 25px;
+}
+
+.hero{
+    padding:0 25px;
+}
+
+.search-wrapper{
+    padding:0 25px;
+}
+
+.section{
+    padding:60px 25px;
+}
+
+.search-box{
+    flex-direction:column;
+}
+
+.premium{
+    grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+UniTravel Cloud
+</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="bus.html">Bus</a>
+<a href="train.html">Train</a>
+<a href="plane.html">Plane</a>
+<a href="cab.html">Cab</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>
+Luxury Flights & Travel Experiences
+</h1>
+
+<p>
+Discover premium destinations, luxury stays, attraction tickets and unforgettable experiences from Perth to the world.
+</p>
+
+</section>
+
+<div class="search-wrapper">
+
+<div class="search-box">
+
+<input type="text" placeholder="From: Perth">
+
+<input type="text" placeholder="Where to next? Bali, Tokyo, Paris...">
+
+<select>
+<option>Economy</option>
+<option>Business</option>
+<option>First Class</option>
+</select>
+
+<button>
+Search Flights
+</button>
+
+</div>
+
+</div>
+
+<section class="section">
+
+<div class="section-title">
+Popular Categories
+</div>
+
+<div class="categories">
+
+<div class="category">✈ Flights</div>
+<div class="category">🏝 Island Escapes</div>
+<div class="category">🏨 Luxury Hotels</div>
+<div class="category">🎡 Attraction Tickets</div>
+<div class="category">🚘 Airport Transfers</div>
+<div class="category">🛳 Cruises</div>
+<div class="category">🎫 Tours & Activities</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="section-title">
+Editor's Choice
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=1200&auto=format&fit=crop">
+
+<div class="card-content">
+
+<h3>Bali Escape</h3>
+
+<p>
+Luxury beach resorts, nightlife and unforgettable island experiences.
+</p>
+
+<div class="price">
+From AUD $299
+</div>
+
+<button>
+Explore
+</button>
+
+</div>
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=1200&auto=format&fit=crop">
+
+<div class="card-content">
+
+<h3>Tokyo Adventure</h3>
+
+<p>
+Premium shopping, Japanese food culture and nightlife experiences.
+</p>
+
+<div class="price">
+From AUD $799
+</div>
+
+<button>
+Explore
+</button>
+
+</div>
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1200&auto=format&fit=crop">
+
+<div class="card-content">
+
+<h3>Paris Getaway</h3>
+
+<p>
+Romantic luxury stays, cafes and unforgettable city experiences.
+</p>
+
+<div class="price">
+From AUD $1299
+</div>
+
+<button>
+Explore
+</button>
+
+</div>
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?q=80&w=1200&auto=format&fit=crop">
+
+<div class="card-content">
+
+<h3>Singapore Luxury Tour</h3>
+
+<p>
+Marina Bay Sands, luxury shopping and skyline nightlife.
+</p>
+
+<div class="price">
+From AUD $699
+</div>
+
+<button>
+Explore
+</button>
+
+</div>
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop">
+
+<div class="card-content">
+
+<h3>Dubai Premium Tour</h3>
+
+<p>
+Luxury shopping, skyscrapers and premium desert adventures.
+</p>
+
+<div class="price">
+From AUD $1599
+</div>
+
+<button>
+Explore
+</button>
+
+</div>
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?q=80&w=1200&auto=format&fit=crop">
+
+<div class="card-content">
+
+<h3>New York Experience</h3>
+
+<p>
+Broadway, Times Square and iconic luxury city experiences.
+</p>
+
+<div class="price">
+From AUD $1799
+</div>
+
+<button>
+Explore
+</button>
+
+</div>
+</div>
+
+</div>
+
+<div class="premium">
+
+<div class="premium-box">
+
+<h4>VIP Airport Lounge</h4>
+
+<p>
+Relax before departure with premium lounge access and exclusive services.
+</p>
+
+</div>
+
+<div class="premium-box">
+
+<h4>Luxury Hotel Deals</h4>
+
+<p>
+Discover premium resorts, villas and luxury city accommodation worldwide.
+</p>
+
+</div>
+
+<div class="premium-box">
+
+<h4>Airport Transfers</h4>
+
+<p>
+Book private airport rides and premium transfers directly from Perth Airport.
+</p>
+
+</div>
+
+<div class="premium-box">
+
+<h4>Travel Essentials</h4>
+
+<p>
+Access SIM cards, insurance, tours and travel accessories before departure.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+UniTravel Cloud © 2026 | Premium Travel Platform
+
+</footer>
+
+</body>
+</html>

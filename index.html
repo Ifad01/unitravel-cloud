@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>UniTravel Cloud</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f5f7fa;
+    color:#222;
+}
+
+nav{
+    background:white;
+    padding:18px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 10px #ddd;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#ff5a1f;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    margin-left:25px;
+    font-weight:bold;
+    font-size:17px;
+}
+
+nav a:hover{
+    color:#ff5a1f;
+}
+
+.hero{
+    background:
+    linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),
+    url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');
+
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:56px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+.search-box{
+    background:white;
+    max-width:950px;
+    margin:35px auto 0;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.search-box input{
+    width:72%;
+    padding:16px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+.search-box button{
+    padding:16px 28px;
+    border:none;
+    background:#ff5a1f;
+    color:white;
+    border-radius:8px;
+    font-size:16px;
+    font-weight:bold;
+}
+
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+h2{
+    font-size:34px;
+    margin-bottom:30px;
+    color:#003366;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 3px 10px #ddd;
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card h3{
+    margin-top:0;
+    color:#003366;
+}
+
+.card a{
+    display:inline-block;
+    margin-top:15px;
+    background:#ff5a1f;
+    color:white;
+    padding:12px 18px;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.feature{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 3px 10px #ddd;
+    margin-bottom:25px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+}
+
+@media(max-width:1000px){
+
+.grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:700px){
+
+.grid{
+    grid-template-columns:1fr;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.search-box input{
+    width:100%;
+    margin-bottom:15px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">UniTravel Cloud</div>
+
+<div>
+<a href="index.html">Home</a>
+<a href="bus.html">Bus</a>
+<a href="train.html">Train</a>
+<a href="plane.html">Plane</a>
+<a href="cab.html">Cab</a>
+</div>
+
+</nav>
+
+<div class="hero">
+
+<h1>Travel Smarter Across Australia</h1>
+
+<p>Book transport, explore destinations and plan trips from one student-friendly platform.</p>
+
+<div class="search-box">
+
+<input type="text" placeholder="Search Perth attractions, transport or tickets">
+
+<button>Search</button>
+
+</div>
+
+</div>
+
+<section>
+
+<h2>Explore Transport Services</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957">
+
+<div class="card-content">
+
+<h3>Bus Tickets</h3>
+
+<p>Access Transperth bus routes, fares and transport planning.</p>
+
+<a href="bus.html">Explore Bus</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1474487548417-781cb71495f3">
+
+<div class="card-content">
+
+<h3>Train Services</h3>
+
+<p>Travel around Perth using train routes and timetable services.</p>
+
+<a href="train.html">Explore Train</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05">
+
+<div class="card-content">
+
+<h3>Flights</h3>
+
+<p>Compare flight options for domestic and international travel.</p>
+
+<a href="plane.html">Explore Flights</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7">
+
+<div class="card-content">
+
+<h3>Cab Services</h3>
+
+<p>Find taxi and rideshare options across Perth and nearby suburbs.</p>
+
+<a href="cab.html">Explore Cab</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Editor's Choice</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+
+<div class="card-content">
+
+<h3>Rottnest Island</h3>
+
+<p>One of Western Australia's most popular island destinations.</p>
+
+<a href="plane.html">View Tickets</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+
+<div class="card-content">
+
+<h3>Cottesloe Beach</h3>
+
+<p>Explore beaches, sunsets and ocean views in Perth.</p>
+
+<a href="cab.html">Book Ride</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e">
+
+<div class="card-content">
+
+<h3>Kings Park</h3>
+
+<p>Visit one of the largest inner-city parks in the world.</p>
+
+<a href="bus.html">Plan Route</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff">
+
+<div class="card-content">
+
+<h3>Elizabeth Quay</h3>
+
+<p>Restaurants, waterfront attractions and city entertainment.</p>
+
+<a href="train.html">View Access</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Why UniTravel Cloud?</h2>
+
+<div class="feature">
+
+<h3>One Platform for Multiple Transport Services</h3>
+
+<p>
+UniTravel Cloud combines buses, trains, flights and cab services into one centralized travel platform for international students.
+</p>
+
+</div>
+
+<div class="feature">
+
+<h3>Student-Friendly Travel Planning</h3>
+
+<p>
+The platform helps students discover routes, compare travel options and access transport services more efficiently.
+</p>
+
+</div>
+
+<div class="feature">
+
+<h3>Integrated Booking Experience</h3>
+
+<p>
+Users can explore transport choices, ticket services and booking support features from one website.
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+UniTravel Cloud © 2026 | Smart Travel Platform
+
+</footer>
+
+</body>
+</html>

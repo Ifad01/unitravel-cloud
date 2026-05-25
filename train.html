@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Train Services | UniTravel Cloud</title>
+
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#f5f7fa;color:#222;}
+nav{background:white;padding:18px 60px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 10px #ddd;position:sticky;top:0;z-index:1000;}
+.logo{font-size:28px;font-weight:bold;color:#ff5a1f;}
+nav a{text-decoration:none;color:#333;margin-left:25px;font-weight:bold;font-size:17px;}
+nav a:hover{color:#ff5a1f;}
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+    url('https://images.unsplash.com/photo-1474487548417-781cb71495f3');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+.hero h1{font-size:56px;margin-bottom:10px;}
+.hero p{font-size:21px;}
+
+.search-box{background:white;max-width:900px;margin:35px auto 0;padding:25px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.3);}
+.search-box input{width:70%;padding:16px;border:1px solid #ccc;border-radius:8px;font-size:16px;}
+.search-box button{padding:16px 26px;background:#ff5a1f;color:white;border:none;border-radius:8px;font-weight:bold;font-size:16px;}
+
+.container{max-width:1200px;margin:auto;padding:55px 20px;}
+.card{background:white;padding:35px;border-radius:15px;box-shadow:0 3px 10px #ddd;margin-bottom:35px;}
+.card h2{color:#003366;font-size:34px;margin-top:0;}
+
+.route{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #ddd;padding:24px 0;}
+.route:last-child{border-bottom:none;}
+.route h3{font-size:25px;margin:0;}
+.route p{font-size:18px;color:#555;}
+
+.button{display:inline-block;background:#ff5a1f;color:white;padding:13px 20px;text-decoration:none;border-radius:8px;font-weight:bold;}
+.button:hover{background:#e64a19;}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;}
+.small-card{background:#f8fafc;padding:25px;border-radius:12px;border:1px solid #ddd;}
+.small-card h3{color:#003366;margin-top:0;}
+
+footer{background:#222;color:white;text-align:center;padding:25px;margin-top:40px;}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">UniTravel Cloud</div>
+<div>
+<a href="index.html">Home</a>
+<a href="bus.html">Bus</a>
+<a href="train.html">Train</a>
+<a href="plane.html">Plane</a>
+<a href="cab.html">Cab</a>
+</div>
+</nav>
+
+<div class="hero">
+<h1>Western Australia Train Services</h1>
+<p>Search train lines, stations and ticket options across Perth and WA.</p>
+
+<div class="search-box">
+<input type="text" placeholder="Search train station, line or destination">
+<button>Search</button>
+</div>
+</div>
+
+<div class="container">
+
+<div class="card">
+<h2>Popular Train Routes</h2>
+
+<div class="route">
+<div>
+<h3>Murdoch Station to Perth Station</h3>
+<p>Estimated fare: AUD $4.90 | Mandurah Line</p>
+</div>
+<a href="https://www.transperth.wa.gov.au/Journey-Planner" target="_blank" class="button">Plan Route</a>
+</div>
+
+<div class="route">
+<div>
+<h3>Perth Station to Fremantle Station</h3>
+<p>Estimated fare: AUD $4.90 | Fremantle Line</p>
+</div>
+<a href="https://www.transperth.wa.gov.au/Journey-Planner" target="_blank" class="button">Plan Route</a>
+</div>
+
+<div class="route">
+<div>
+<h3>Elizabeth Quay to Canning Bridge</h3>
+<p>Estimated fare: AUD $3.20 | Mandurah Line access</p>
+</div>
+<a href="https://www.transperth.wa.gov.au/Journey-Planner" target="_blank" class="button">Plan Route</a>
+</div>
+
+<div class="route">
+<div>
+<h3>Perth Station to Joondalup Station</h3>
+<p>Estimated fare: AUD $5.00 | Yanchep Line</p>
+</div>
+<a href="https://www.transperth.wa.gov.au/Journey-Planner" target="_blank" class="button">Plan Route</a>
+</div>
+
+</div>
+
+<div class="card">
+<h2>Train Ticket and Travel Options</h2>
+
+<div class="grid">
+<div class="small-card">
+<h3>SmartRider</h3>
+<p>Use SmartRider for regular train, bus and ferry travel across Transperth services.</p>
+<a href="https://www.transperth.wa.gov.au/SmartRider" target="_blank" class="button">View SmartRider</a>
+</div>
+
+<div class="small-card">
+<h3>Train Timetables</h3>
+<p>Check train line schedules, service frequency and station information.</p>
+<a href="https://www.transperth.wa.gov.au/timetables" target="_blank" class="button">View Timetables</a>
+</div>
+
+<div class="small-card">
+<h3>Fares</h3>
+<p>Compare train fares, ticket zones and travel costs before your journey.</p>
+<a href="https://www.transperth.wa.gov.au/Tickets-Fares/Fares" target="_blank" class="button">View Fares</a>
+</div>
+</div>
+</div>
+
+<div class="card">
+<h2>Western Australia Train Coverage</h2>
+<p style="font-size:18px;">
+UniTravel Cloud helps students access train information for major Perth stations, university routes, city travel, beaches, airports and tourist locations.
+The platform connects students to official train planning tools and ticket information through one simple travel website.
+</p>
+</div>
+
+</div>
+
+<footer>
+UniTravel Cloud © 2026 | Smart Travel Platform
+</footer>
+
+</body>
+</html>
