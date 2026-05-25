@@ -1,0 +1,31 @@
+===============================
+ UniTravel Cloud System Report
+===============================
+
+Apache status:
+active
+
+Website files:
+/var/www/html/bus.html
+/var/www/html/cab.html
+/var/www/html/index.html
+/var/www/html/index.nginx-debian.html
+/var/www/html/plane.html
+/var/www/html/train.html
+
+HTTPS status:
+HTTP/1.1 200 OK
+Date: Mon, 25 May 2026 11:57:05 GMT
+Server: Apache/2.4.58 (Ubuntu)
+Last-Modified: Mon, 25 May 2026 10:35:06 GMT
+ETag: "1825-652a1ee9af093"
+Accept-Ranges: bytes
+Content-Length: 6181
+Vary: Accept-Encoding
+Content-Type: text/html
+
+
+Server IP Address:
+10.0.0.4 
+
+Report generated successfully.
