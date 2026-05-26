@@ -1,7 +1,7 @@
 # UniTravel Cloud
 
-Student Name: Ifad Chowdhury  
-Student ID: YOUR STUDENT ID HERE
+Student Name: Sheikh Ifadullah Chowdhury  
+Student ID: 36072068
 
 ## Project Overview
 UniTravel Cloud is a cloud-hosted travel and transport platform developed for ICT171.  
