@@ -46,6 +46,36 @@ The project includes a bash script called `travelcheck.sh` which:
 - Tests HTTPS connection
 - Generates a system report
 
+## Bash Script Documentation
+
+### Script Name
+travelcheck.sh
+
+### Purpose
+This script is used to monitor the UniTravel Cloud server.
+
+### Functions
+- Checks Apache web server status
+- Verifies website pages exist
+- Tests HTTPS connectivity
+- Displays server IP address
+- Generates a report file
+
+### Running the Script
+
+```bash
+./travelcheck.sh
+```
+
+### Output
+The script displays:
+- Apache status
+- Website file verification
+- HTTPS verification
+- Server information
+
+The script also generates a report file for verification purposes.
+
 ## Author
 Ifad Chowdhury
 Murdoch University
