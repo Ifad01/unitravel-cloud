@@ -77,7 +77,12 @@ The script displays:
 The script also generates a report file for verification purposes.
 
 ## Author
-Ifad Chowdhury
+
+Sheikh Ifadullah Chowdhury
+
+Student ID: 36072068
+
 Murdoch University
+
 Bachelor of Information Technology
-Major: Cyber Security and Forensics
+(Cyber Security and Forensics)
