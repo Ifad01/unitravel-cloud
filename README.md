@@ -76,6 +76,43 @@ The script displays:
 
 The script also generates a report file for verification purposes.
 
+## Website Setup
+
+1. Created an Ubuntu Virtual Machine in Microsoft Azure.
+2. Connected to the VM using SSH.
+3. Updated the system using:
+
+   * sudo apt update
+   * sudo apt upgrade -y
+4. Installed Apache2:
+
+   * sudo apt install apache2 -y
+5. Uploaded website files to:
+
+   * /var/www/html
+6. Tested website accessibility using the Azure public IP address.
+
+## DNS Configuration
+
+1. Purchased the domain `ifadcloud.xyz` through Namecheap.
+2. Configured Azure DNS nameservers.
+3. Linked the domain to the Azure Virtual Machine.
+4. Verified successful DNS resolution through the public website.
+
+## SSL/TLS Configuration
+
+1. Installed Certbot on Ubuntu Linux.
+2. Generated a Let's Encrypt SSL certificate.
+3. Configured Apache2 to use HTTPS.
+4. Verified secure access through:
+
+   * https://ifadcloud.xyz
+
+## Video Explainer
+
+   *https://youtu.be/r38Rb5Yn3gw?si=Ko6Go8qTGMWak3mp
+
+
 ## Author
 
 Sheikh Ifadullah Chowdhury
